@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Bootcamps ESPOL - Impulsa tu Carrera en Tecnología</title>
+  <!-- Etiquetas meta para SEO -->
+  <meta name="description" content="Impulsa tu carrera con los Coding Bootcamps de ESPOL. Programas intensivos en Desarrollo Web Full Stack, Ciencia de Datos y Business Data Analytics." />
+  <meta name="keywords" content="ESPOL, bootcamp, tecnología, desarrollo web, ciencia de datos, business data analytics, educación, Ecuador" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- HEADER con navegación -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo ESPOL -->
+      <a href="#hero" class="flex items-center space-x-2">
+        <img 
+          src="https://via.placeholder.com/120x40" 
+          alt="Logo ESPOL" 
+          class="h-10 w-auto"
+        />
+        <span class="font-bold text-gray-700 text-xl hidden sm:inline">ESPOL</span>
+      </a>
+      <!-- Menú de navegación (anclas) -->
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="#hero" class="hover:text-blue-600 transition">Inicio</a>
+        <a href="#propuesta-valor" class="hover:text-blue-600 transition">Beneficios</a>
+        <a href="#bootcamps" class="hover:text-blue-600 transition">Bootcamps</a>
+        <a href="#testimonios" class="hover:text-blue-600 transition">Testimonios</a>
+        <a href="#contacto" class="hover:text-blue-600 transition">Contacto</a>
+      </nav>
+      <!-- Botón CTA en el header (opcional) -->
+      <a 
+        href="#contacto"
+        class="hidden md:inline-block bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition"
+      >
+        Inscríbete
+      </a>
+      <!-- Menú hamburguesa (versión móvil) -->
+      <button 
+        class="md:hidden p-2 text-gray-600 hover:text-blue-600 focus:outline-none"
+        onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
+        aria-label="Toggle menu"
+      >
+        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+          <path d="M4 5h16M4 12h16M4 19h16"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Menú desplegable móvil -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200">
+      <nav class="px-4 py-2 flex flex-col space-y-2">
+        <a href="#hero" class="hover:text-blue-600 transition">Inicio</a>
+        <a href="#propuesta-valor" class="hover:text-blue-600 transition">Beneficios</a>
+        <a href="#bootcamps" class="hover:text-blue-600 transition">Bootcamps</a>
+        <a href="#testimonios" class="hover:text-blue-600 transition">Testimonios</a>
+        <a href="#contacto" class="hover:text-blue-600 transition">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO (Imagen de Héroe) -->
+  <section 
+    id="hero" 
+    class="relative bg-gray-800"
+    aria-label="Sección de héroe con imagen de fondo"
+  >
+    <div 
+      class="h-[500px] bg-cover bg-center bg-no-repeat flex items-center justify-center"
+      style="background-image: url('https://via.placeholder.com/1600x900');"
+    >
+      <!-- Overlay oscuro -->
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+      <div class="relative z-10 text-center px-4">
+        <!-- Título principal (H1 para SEO) -->
+        <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">
+          Impulsa tu Carrera en Tecnología
+        </h1>
+        <!-- Subtítulo -->
+        <p class="text-white text-lg md:text-xl max-w-2xl mx-auto mb-6">
+          Con los Coding Bootcamps de ESPOL, adquiere las habilidades más demandadas y transforma tu futuro profesional.
+        </p>
+        <!-- CTA principal en el hero -->
+        <a 
+          href="#contacto"
+          class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded transition"
+        >
+          Inscríbete Ahora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: Propuesta de Valor (Beneficios) -->
+  <section id="propuesta-valor" class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">
+        ¿Por qué elegir los Coding Bootcamps ESPOL?
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+
+        <!-- Beneficio 1 -->
+        <div class="flex flex-col items-center text-center p-4">
+          <div class="mb-4">
+            <img 
+              src="https://via.placeholder.com/60" 
+              alt="Ícono de bombilla - Formación Intensiva y Práctica" 
+              class="mx-auto"
+            />
+          </div>
+          <h3 class="font-semibold mb-2">Formación Intensiva y Práctica</h3>
+          <p class="text-sm">
+            Sumérgete en un aprendizaje acelerado con metodologías “learning by doing” para afrontar retos reales del mercado laboral.
+          </p>
+        </div>
+
+        <!-- Beneficio 2 -->
+        <div class="flex flex-col items-center text-center p-4">
+          <div class="mb-4">
+            <img 
+              src="https://via.placeholder.com/60" 
+              alt="Ícono de maletín - Habilidades de Alta Demanda" 
+              class="mx-auto"
+            />
+          </div>
+          <h3 class="font-semibold mb-2">Habilidades de Alta Demanda</h3>
+          <p class="text-sm">
+            Domina las tecnologías y herramientas más solicitadas en áreas como Desarrollo Web Full Stack y Ciencia de Datos.
+          </p>
+        </div>
+
+        <!-- Beneficio 3 -->
+        <div class="flex flex-col items-center text-center p-4">
+          <div class="mb-4">
+            <img 
+              src="https://via.placeholder.com/60" 
+              alt="Ícono de diploma - Respaldo Académico ESPOL" 
+              class="mx-auto"
+            />
+          </div>
+          <h3 class="font-semibold mb-2">Respaldo Académico ESPOL</h3>
+          <p class="text-sm">
+            Aprovecha la trayectoria y prestigio de la Escuela Superior Politécnica del Litoral, líder en educación superior en Ecuador.
+          </p>
+        </div>
+
+        <!-- Beneficio 4 -->
+        <div class="flex flex-col items-center text-center p-4">
+          <div class="mb-4">
+            <img 
+              src="https://via.placeholder.com/60" 
+              alt="Ícono de persona con flecha hacia arriba - Acelerador de Carrera" 
+              class="mx-auto"
+            />
+          </div>
+          <h3 class="font-semibold mb-2">Acelerador de Carrera</h3>
+          <p class="text-sm">
+            Desarrolla habilidades blandas (soft skills) esenciales como comunicación y liderazgo para impulsar tu empleabilidad.
+          </p>
+        </div>
+
+        <!-- Beneficio 5 -->
+        <div class="flex flex-col items-center text-center p-4">
+          <div class="mb-4">
+            <img 
+              src="https://via.placeholder.com/60" 
+              alt="Ícono de red de personas - Networking y Comunidad" 
+              class="mx-auto"
+            />
+          </div>
+          <h3 class="font-semibold mb-2">Networking y Comunidad</h3>
+          <p class="text-sm">
+            Conéctate con instructores expertos, compañeros apasionados y la red profesional de ESPOL, abriendo puertas a nuevas oportunidades.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: Visualización de Productos (Bootcamps) -->
+  <section id="bootcamps" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">
+        Conoce Nuestros Bootcamps
+      </h2>
+      <!-- Descripción general de los programas -->
+      <p class="text-center max-w-2xl mx-auto mb-8">
+        Descubre los diferentes programas que ESPOL ofrece para impulsar tu formación en tecnología. Cada bootcamp está diseñado para que desarrolles habilidades prácticas y te conviertas en un profesional altamente demandado.
+      </p>
+      <!-- Galería / Carrusel de productos (Bootcamps) -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Bootcamp 1 -->
+        <div class="bg-white rounded shadow p-4 flex flex-col">
+          <img 
+            src="https://via.placeholder.com/400x250" 
+            alt="Imagen del Bootcamp de Desarrollo Web Full Stack" 
+            class="mb-4 rounded"
+          />
+          <h3 class="font-semibold text-lg mb-2">Desarrollo Web Full Stack</h3>
+          <p class="text-sm flex-grow">
+            Aprende a construir aplicaciones web de principio a fin utilizando tecnologías modernas como JavaScript, Node.js y frameworks de frontend.
+          </p>
+          <a 
+            href="#contacto"
+            class="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center transition"
+          >
+            Inscríbete
+          </a>
+        </div>
+        <!-- Bootcamp 2 -->
+        <div class="bg-white rounded shadow p-4 flex flex-col">
+          <img 
+            src="https://via.placeholder.com/400x250" 
+            alt="Imagen del Bootcamp de Ciencia de Datos" 
+            class="mb-4 rounded"
+          />
+          <h3 class="font-semibold text-lg mb-2">Ciencia de Datos</h3>
+          <p class="text-sm flex-grow">
+            Domina las técnicas y herramientas para extraer conocimiento de grandes volúmenes de datos. Python, Machine Learning y visualización de datos.
+          </p>
+          <a 
+            href="#contacto"
+            class="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center transition"
+          >
+            Inscríbete
+          </a>
+        </div>
+        <!-- Bootcamp 3 -->
+        <div class="bg-white rounded shadow p-4 flex flex-col">
+          <img 
+            src="https://via.placeholder.com/400x250" 
+            alt="Imagen del Bootcamp de Business Data Analytics" 
+            class="mb-4 rounded"
+          />
+          <h3 class="font-semibold text-lg mb-2">Business Data Analytics</h3>
+          <p class="text-sm flex-grow">
+            Aprende a analizar datos y generar insights estratégicos para la toma de decisiones empresariales, utilizando herramientas de BI.
+          </p>
+          <a 
+            href="#contacto"
+            class="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded text-center transition"
+          >
+            Inscríbete
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: CTA (Call To Action) principal -->
+  <section id="cta" class="py-12 bg-gray-800 text-white text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">
+        ¿Listo para transformar tu futuro?
+      </h2>
+      <p class="mb-8">
+        Aprovecha la oportunidad de impulsar tu carrera con un programa intensivo respaldado por la excelencia académica de ESPOL.
+      </p>
+      <a 
+        href="#contacto"
+        class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded transition"
+      >
+        Inscríbete Ahora
+      </a>
+      <p class="mt-4 text-sm">
+        <strong>Cupos Limitados.</strong> Asegura tu lugar y aprovecha el descuento por inscripción temprana.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: Testimonios -->
+  <section id="testimonios" class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">
+        Lo que dicen nuestros graduados
+      </h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Testimonio 1 -->
+        <div class="bg-gray-50 p-6 rounded shadow">
+          <p class="italic mb-4">
+            "El Bootcamp de Data Science de ESPOL fue la mejor decisión que tomé. En pocos meses adquirí las habilidades necesarias para conseguir un trabajo en la industria. Los instructores son excelentes."
+          </p>
+          <div class="text-sm font-semibold">
+            - [Nombre del Graduado], [Cargo Actual], [Empresa Actual]
+          </div>
+        </div>
+        <!-- Testimonio 2 -->
+        <div class="bg-gray-50 p-6 rounded shadow">
+          <p class="italic mb-4">
+            "Gracias al Bootcamp Full Stack, logré cambiar mi carrera profesional por completo. El enfoque práctico y el acompañamiento de los instructores fueron claves para mi éxito."
+          </p>
+          <div class="text-sm font-semibold">
+            - [Nombre del Graduado], [Cargo Actual], [Empresa Actual]
+          </div>
+        </div>
+        <!-- Testimonio 3 -->
+        <div class="bg-gray-50 p-6 rounded shadow">
+          <p class="italic mb-4">
+            "Recomiendo totalmente el Bootcamp de Business Data Analytics de ESPOL. Me brindó las herramientas para analizar datos y tomar decisiones estratégicas en mi empresa."
+          </p>
+          <div class="text-sm font-semibold">
+            - [Nombre del Graduado], [Cargo Actual], [Empresa Actual]
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: Formulario de Contacto -->
+  <section id="contacto" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">
+        ¿Tienes Preguntas? Contáctanos
+      </h2>
+      <div class="max-w-xl mx-auto">
+        <form class="space-y-4">
+          <!-- Nombre -->
+          <div>
+            <label for="nombre" class="block mb-1 font-medium">Nombre</label>
+            <input 
+              type="text" 
+              id="nombre" 
+              name="nombre" 
+              class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500" 
+              placeholder="Ingresa tu nombre"
+              required
+            />
+          </div>
+          <!-- Email -->
+          <div>
+            <label for="email" class="block mb-1 font-medium">Email</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500" 
+              placeholder="Ingresa tu correo electrónico"
+              required
+            />
+          </div>
+          <!-- Teléfono -->
+          <div>
+            <label for="telefono" class="block mb-1 font-medium">Teléfono</label>
+            <input 
+              type="tel" 
+              id="telefono" 
+              name="telefono" 
+              class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500" 
+              placeholder="Ingresa tu número de teléfono"
+              required
+            />
+          </div>
+          <!-- Programa de Interés -->
+          <div>
+            <label for="programa" class="block mb-1 font-medium">Programa de Interés</label>
+            <select 
+              id="programa" 
+              name="programa" 
+              class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500"
+              required
+            >
+              <option value="">Selecciona un Bootcamp</option>
+              <option value="fullstack">Desarrollo Web Full Stack</option>
+              <option value="datascience">Ciencia de Datos</option>
+              <option value="businessdata">Business Data Analytics</option>
+            </select>
+          </div>
+          <!-- Mensaje Opcional -->
+          <div>
+            <label for="mensaje" class="block mb-1 font-medium">Mensaje (Opcional)</label>
+            <textarea 
+              id="mensaje" 
+              name="mensaje" 
+              rows="4" 
+              class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-500" 
+              placeholder="Déjanos un mensaje o pregunta adicional"
+            ></textarea>
+          </div>
+          <!-- Botón de Envío -->
+          <div class="text-center">
+            <button 
+              type="submit" 
+              class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded transition"
+            >
+              Enviar Consulta
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer" class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+        <!-- Logo e información de contacto -->
+        <div class="mb-4 md:mb-0">
+          <img 
+            src="https://via.placeholder.com/120x40" 
+            alt="Logo ESPOL" 
+            class="mb-4"
+          />
+          <p class="text-sm">
+            Km 30.5 Vía Perimetral, Guayaquil, Ecuador<br/>
+            Teléfono: +593 (4) 2269-000<br/>
+            Email: info@espol.edu.ec
+          </p>
+        </div>
+        <!-- Enlaces a redes sociales (opcional) -->
+        <div class="text-sm">
+          <p class="mb-2">Síguenos en redes sociales:</p>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-gray-300">Facebook</a>
+            <a href="#" class="hover:text-gray-300">Twitter</a>
+            <a href="#" class="hover:text-gray-300">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6 text-center text-xs text-gray-400">
+        <p>© 2023 ESPOL. Todos los derechos reservados.</p>
+        <p>
+          <a href="#" class="hover:text-gray-300">Aviso de privacidad</a> | 
+          <a href="#" class="hover:text-gray-300">Términos de uso</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT opcional para funcionalidad extra (por ejemplo, Google Analytics) -->
+  <!-- <script>
+    // Aquí podrías incluir tu código de seguimiento de Google Analytics u otras herramientas
+  </script> -->
+
+</body>
+</html>

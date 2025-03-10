@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Descubre los Coding Bootcamps ESPOL. Transforma tu carrera en tecnología con programas intensivos en Desarrollo Web Full Stack, Ciencia de Datos y Business Data Analytics."
+    />
+    <meta
+      name="keywords"
+      content="ESPOL, Coding Bootcamp, Full Stack, Ciencia de Datos, Business Data Analytics, tecnología, educación, Bootcamp"
+    />
+    <meta name="author" content="ESPOL" />
+    <title>Coding Bootcamps ESPOL | Transforma tu Carrera en Tecnología</title>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Coding Bootcamps ESPOL" />
+    <meta
+      property="og:description"
+      content="Impulsa tu carrera en tecnología con nuestros programas intensivos respaldados por la excelencia académica de ESPOL."
+    />
+    <meta
+      property="og:image"
+      content="https://source.unsplash.com/random/?technology"
+    />
+    <meta property="og:type" content="website" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans antialiased text-gray-800">
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow">
+      <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="#" class="flex items-center">
+          <img
+            src="https://via.placeholder.com/150x50?text=ESPOL+Logo"
+            alt="Logo ESPOL"
+            class="h-10"
+          />
+        </a>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#hero" class="text-gray-600 hover:text-[#1E778B]">Inicio</a>
+          <a href="#programas" class="text-gray-600 hover:text-[#1E778B]"
+            >Programas</a
+          >
+          <a href="#testimonios" class="text-gray-600 hover:text-[#1E778B]"
+            >Testimonios</a
+          >
+          <a href="#contacto" class="text-gray-600 hover:text-[#1E778B]"
+            >Contacto</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="relative h-screen bg-cover bg-center"
+      style="background-image: url('https://source.unsplash.com/random/?students,technology');"
+    >
+      <!-- Overlay oscuro para resaltar el texto -->
+      <div class="absolute inset-0 bg-black opacity-60"></div>
+      <div
+        class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 text-white"
+      >
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">
+          Impulsa tu Carrera en Tecnología
+        </h1>
+        <p class="text-xl md:text-2xl max-w-2xl mb-8">
+          Descubre los Coding Bootcamps ESPOL y adquiere las habilidades más
+          demandadas por la industria.
+        </p>
+        <a
+          href="#contacto"
+          class="bg-[#1E778B] hover:bg-[#2DB5B0] text-white font-semibold py-3 px-8 rounded-full transition duration-300"
+        >
+          Inscríbete Ahora
+        </a>
+      </div>
+    </section>
+
+    <!-- Visualización de Productos / Programas -->
+    <main class="container mx-auto px-4 py-16" id="programas">
+      <section>
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Nuestros Programas Bootcamp
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Programa 1: Desarrollo Web Full Stack -->
+          <article class="bg-white rounded-lg shadow overflow-hidden">
+            <img
+              src="https://source.unsplash.com/random/?webdevelopment"
+              alt="Desarrollo Web Full Stack"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Desarrollo Web Full Stack</h3>
+              <p class="text-gray-600 mb-4">
+                Aprende a construir aplicaciones web completas con las
+                tecnologías más modernas y demandadas.
+              </p>
+              <a
+                href="#contacto"
+                class="text-[#1E778B] hover:underline font-medium"
+                >Ver más</a
+              >
+            </div>
+          </article>
+          <!-- Programa 2: Ciencia de Datos -->
+          <article class="bg-white rounded-lg shadow overflow-hidden">
+            <img
+              src="https://source.unsplash.com/random/?datascience"
+              alt="Ciencia de Datos"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Ciencia de Datos</h3>
+              <p class="text-gray-600 mb-4">
+                Domina el análisis de datos y las técnicas de inteligencia
+                artificial para resolver problemas reales.
+              </p>
+              <a
+                href="#contacto"
+                class="text-[#1E778B] hover:underline font-medium"
+                >Ver más</a
+              >
+            </div>
+          </article>
+          <!-- Programa 3: Business Data Analytics -->
+          <article class="bg-white rounded-lg shadow overflow-hidden">
+            <img
+              src="https://source.unsplash.com/random/?business"
+              alt="Business Data Analytics"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">Business Data Analytics</h3>
+              <p class="text-gray-600 mb-4">
+                Aprende a transformar datos en decisiones estratégicas que
+                impulsen el crecimiento de tu empresa.
+              </p>
+              <a
+                href="#contacto"
+                class="text-[#1E778B] hover:underline font-medium"
+                >Ver más</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Llamada a la Acción (CTA) Intermedia -->
+      <section
+        class="mt-16 bg-[#2DB5B0] text-white rounded-lg py-12 text-center"
+      >
+        <h2 class="text-3xl font-bold mb-4">¡Aprovecha esta oportunidad única!</h2>
+        <p class="mb-6">
+          Cupos limitados y descuentos especiales por inscripción temprana.
+        </p>
+        <a
+          href="#contacto"
+          class="bg-white text-[#1E778B] font-semibold py-3 px-8 rounded-full hover:bg-[#C2FFF2] transition duration-300"
+        >
+          Inscríbete Ahora
+        </a>
+      </section>
+    </main>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="py-16 bg-[#C2FFF2]/30">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Lo que dicen nuestros graduados
+        </h2>
+        <div class="space-y-8">
+          <!-- Testimonio 1 -->
+          <article
+            class="bg-white p-6 rounded-lg shadow flex flex-col md:flex-row items-center"
+          >
+            <img
+              src="https://via.placeholder.com/100"
+              alt="Graduado Testimonio"
+              class="w-24 h-24 rounded-full mb-4 md:mb-0 md:mr-6"
+            />
+            <div>
+              <p class="italic text-gray-700">
+                "El Bootcamp de Data Science de ESPOL fue la mejor decisión que
+                tomé. En pocos meses adquirí las habilidades necesarias para
+                insertarme en la industria tecnológica."
+              </p>
+              <p class="mt-2 font-semibold text-gray-800">
+                Mariana Pérez - Data Analyst, Empresa XYZ
+              </p>
+            </div>
+          </article>
+          <!-- Testimonio 2 -->
+          <article
+            class="bg-white p-6 rounded-lg shadow flex flex-col md:flex-row items-center"
+          >
+            <img
+              src="https://via.placeholder.com/100"
+              alt="Graduado Testimonio"
+              class="w-24 h-24 rounded-full mb-4 md:mb-0 md:mr-6"
+            />
+            <div>
+              <p class="italic text-gray-700">
+                "El Bootcamp Full Stack cambió mi carrera. La metodología práctica
+                y el acompañamiento de los instructores fueron claves para mi
+                éxito."
+              </p>
+              <p class="mt-2 font-semibold text-gray-800">
+                Carlos Gómez - Desarrollador Web, Startup ABC
+              </p>
+            </div>
+          </article>
+          <!-- Testimonio 3 -->
+          <article
+            class="bg-white p-6 rounded-lg shadow flex flex-col md:flex-row items-center"
+          >
+            <img
+              src="https://via.placeholder.com/100"
+              alt="Graduado Testimonio"
+              class="w-24 h-24 rounded-full mb-4 md:mb-0 md:mr-6"
+            />
+            <div>
+              <p class="italic text-gray-700">
+                "Recomiendo el Bootcamp de Business Data Analytics. Me proporcionó
+                herramientas estratégicas para tomar decisiones en mi empresa."
+              </p>
+              <p class="mt-2 font-semibold text-gray-800">
+                Ana Rodríguez - Gerente de Proyectos, Compañía LMN
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Contacto / Formulario -->
+    <section id="contacto" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">
+          ¿Tienes Preguntas? Contáctanos
+        </h2>
+        <form
+          class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow"
+          action="#"
+          method="POST"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label
+                for="nombre"
+                class="block text-gray-700 font-medium mb-2"
+                >Nombre</label
+              >
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre"
+                class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-[#1E778B]"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="email"
+                class="block text-gray-700 font-medium mb-2"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Tu email"
+                class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-[#1E778B]"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="telefono"
+                class="block text-gray-700 font-medium mb-2"
+                >Teléfono</label
+              >
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="Tu teléfono"
+                class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-[#1E778B]"
+              />
+            </div>
+            <div>
+              <label
+                for="programa"
+                class="block text-gray-700 font-medium mb-2"
+                >Programa de Interés</label
+              >
+              <select
+                id="programa"
+                name="programa"
+                class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-[#1E778B]"
+                required
+              >
+                <option value="">Seleccione una opción</option>
+                <option value="fullstack">Desarrollo Web Full Stack</option>
+                <option value="datascience">Ciencia de Datos</option>
+                <option value="businessdata">Business Data Analytics</option>
+              </select>
+            </div>
+          </div>
+          <div class="mt-6">
+            <label
+              for="mensaje"
+              class="block text-gray-700 font-medium mb-2"
+              >Mensaje (Opcional)</label
+            >
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              placeholder="Escribe tu mensaje"
+              class="w-full border border-gray-300 p-3 rounded focus:outline-none focus:border-[#1E778B]"
+            ></textarea>
+          </div>
+          <div class="mt-6 text-center">
+            <button
+              type="submit"
+              class="bg-[#1E778B] hover:bg-[#2DB5B0] text-white font-semibold py-3 px-8 rounded-full transition duration-300"
+            >
+              Enviar Consulta
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1E778B] text-white py-8">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between"
+      >
+        <div class="flex items-center mb-4 md:mb-0">
+          <img
+            src="https://via.placeholder.com/150x50?text=ESPOL+Logo"
+            alt="Logo ESPOL"
+            class="mr-4 h-10"
+          />
+          <span class="text-sm">&copy; 2025 ESPOL. Todos los derechos reservados.</span>
+        </div>
+        <div class="flex space-x-4 text-sm">
+          <a href="#" class="hover:underline">Facebook</a>
+          <a href="#" class="hover:underline">Twitter</a>
+          <a href="#" class="hover:underline">Instagram</a>
+          <a href="#" class="hover:underline">LinkedIn</a>
+        </div>
+      </div>
+      <div class="container mx-auto px-4 mt-4 text-center text-sm">
+        <a href="#" class="hover:underline">Aviso de privacidad</a> |
+        <a href="#" class="hover:underline">Términos de uso</a>
+      </div>
+    </footer>
+  </body>
+</html>
