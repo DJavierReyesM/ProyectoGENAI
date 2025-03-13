@@ -1,0 +1,54 @@
+/*
+      Paleta basada en la imagen provista (aprox.):
+      1) #20345F (azul marino oscuro)
+      2) #456F7B (teal azulado)
+      3) #A4CAB8 (verde menta suave)
+      4) #E7F2ED (verde menta muy claro)
+      5) #FFFFFF (blanco)
+    */
+/* Clases para fondos */
+.bg-primary {
+    background-color: #20345F;
+}
+
+.bg-secondary {
+    background-color: #456F7B;
+}
+
+.bg-accent {
+    background-color: #A4CAB8;
+}
+
+.bg-highlight {
+    background-color: #E7F2ED;
+}
+
+.bg-light {
+    background-color: #FFFFFF;
+}
+
+/* Clases para texto */
+.text-primary {
+    color: #20345F;
+}
+
+.text-secondary {
+    color: #456F7B;
+}
+
+.text-accent {
+    color: #A4CAB8;
+}
+
+/* Estados hover para los botones */
+.hover-bg-accent:hover {
+    background-color: #A4CAB8;
+}
+
+.hover-bg-secondary:hover {
+    background-color: #456F7B;
+}
+
+.hover-bg-primary:hover {
+    background-color: #20345F;
+}
